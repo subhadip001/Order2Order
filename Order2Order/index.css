@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    --main-color: #283526;
+    --primary-color:#888888;
+    --button-background:#2083F6;
+    --primary-button-background:#fe7649;
+    --background-color:#e2efff;
+
+}
+
+h1,h2{
+    font-family: 'Mulish', sans-serif;
+    color: var(--main-color);
+}
+h3,h4{
+    font-family: 'Mulish', sans-serif;
+}
+h3{
+    font-weight: 750;
+    font-size: 1.3rem;
+    line-height: 4rem;
+}
+
+p,a,li,button{
+    font-family:'Mulish', sans-serif;
+    color: var(--primary-color);
+}
+p{
+    font-size: 1.1rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+.button{
+    padding: 0.8rem 1.9rem;
+    border-radius: 1.4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+
+/* ---------------------------Our Menu style--------------------------- */
+
+header{
+    padding: 0 12.5rem;
+    
+
+}
+header nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:7.5rem ;
+}
+
+header nav .left-side-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 50%;
+    /* background-color: rgba(234, 245, 248, 0.747); */
+
+}
+header nav .left-side-menu a img{
+    width: 8.125rem;
+    height: 3.4375rem;
+    
+                
+}
+header nav .left-side-menu .sub-menu{
+    display: flex;
+    height: inherit;
+}
+
+header nav .left-side-menu a{
+    margin-right: 2.5rem;
+}
+header nav .left-side-menu .sub-menu a li{
+    font: size 1.25rem;
+    line-height:2.25rem;
+    text-transform: capitalize;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+header nav .left-side-menu .sub-menu a li:hover{
+    color: var(--button-background);
+
+}
+
+/* right side menu style */
+
+header .right-side-menu{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+header .right-side-menu .sub-menu{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .right-side-menu .sub-menu a{
+    margin-left: 5rem;
+    padding: 0.43rem 1.25rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 1.4rem;
+    z-index: 9;
+}
+
+header .right-side-menu .sub-menu .button{
+    background-color: var(--button-background);
+    color: #fff;
+    transition: 0.2s;
+    z-index: 9;
+
+}
+header .right-side-menu .sub-menu .button:hover{
+    background-color:rgba(255, 255, 255, 0.5);
+    color: var(--button-background);
+}
+
+/* -------------------------content style starts------------------------- */
+
+/* ---------------------main left side----------------------- */
+.main-section{
+    padding: 0 12.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6.25rem;
+
+}
+
+.main-section .left-side {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+.main-section h1{
+    width: 34.375rem;
+    font-size: 4rem;
+    line-height: 4.7rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+    
+}
+
+.main-section p{
+    width: 26rem;
+    margin-bottom: 2.5rem;
+}
+
+.main-section .button-group a{
+    background-color: var(--button-background);
+    color: #fff;
+    padding: 0.8rem 1.9rem;
+    border-radius: 1.4rem;
+    font-size: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    transition: 0.2s;
+}
+.main-section .button-group a:hover{
+    background-color: #fff;
+    color: var(--button-background);
+}
+
+/* ---------------------main right side---------------------- */
+
+.main-section .right-side{
+    width: 50%;
+    height: 100vh;
+    background: var(--background-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 90px 0px 0px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-section .right-side img {
+    width: 60.5rem;
+    height: 45.25rem;
+    margin-right: 20.875rem;
+  }
+  
+/* .......................................sections 2 style.............................. */
+       
+.common-sec{
+    width: 100%;
+    height: 43.73rem;
+    display: grid ; 
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5.625rem;
+    padding: 0 12.5rem ;
+}
+
+/* ------------left side--------------- */
+.common-sec .left-side{
+    width: inherit;
+    height: inherit;
+    
+}
+.common-sec .left-side figure{
+    width: 12.5rem;
+    height: 39rem;
+    background-color:#fff59d;
+    border-radius: 1.325rem;
+}
+.common-sec .left-side img{
+    width: 28.125rem;
+    height: 35.5rem;
+    border-radius: 1.325rem;
+    margin-left: 6.25rem;
+    margin-top: 1.5625rem;
+}
+
+/* ------------right side--------------- */
+
+.common-sec .right-side{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 6.25rem;
+}            
+
+.common-sec .right-side h2{
+    width:25rem;
+    font-style: normal;
+    font-size: 3.4375rem;
+    line-height: 4.7rem;
+    margin-bottom: 3rem;
+    line-height: 4.7rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+    
+}
+.common-sec .right-side p{
+    width: 26.875rem;
+    margin-bottom: 1.875rem;
+
+}
+.common-sec .right-side p span{
+    font-weight: bold;
+}
+
+.common-sec .right-side p a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+/* .......................................sections 3 style.............................. */
+
+.common-sec-3{
+    width: 100%;
+    height: 43.73rem;
+    display: grid ; 
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1.625rem;
+    padding: 0 12.5rem ;
+}
+
+/* ------------left side--------------- */
+.common-sec-3 .left-side{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+.common-sec-3 .left-side h2{
+    width:25rem;
+    font-style: normal;
+    font-size: 3.4375rem;
+    line-height: 4.7rem;
+    margin-bottom: 3rem;
+    line-height: 4.7rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+    
+}
+.common-sec-3 .left-side p{
+    width: 26.875rem;
+    margin-bottom: 1.875rem;
+}
+.common-sec-3 .left-side p span{
+    font-weight: bold;
+}
+
+/* ------------right side-----------#fff59d---- */
+.common-sec-3 .right-side{
+    width: inherit;
+    height: inherit;
+}
+.common-sec-3 .right-side figure{
+    width: 100% ;
+    height: 39rem;
+    background-color:rgb(241, 155, 227);
+    border-radius: 1.325rem;
+}
+.common-sec-3 .right-side img{
+    width: 95%;
+    height: 35.5rem;
+    border-radius: 1.325rem;
+    margin-left: -2.6rem;
+    margin-top: 1.5625rem;
+}
+/* .......................................sections 4 style.............................. */
+.common-sec-4{
+    width: 100%;
+    height: 43.73rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5.625rem;
+    padding: 0 12.5rem ;
+    background-color: #f8f8f8;
+}
+.common-sec-4 h2{
+    width:100%;
+    font-style: normal;
+    font-size: 2.3rem;
+    line-height: 4.7rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+}
+/* .......................................sections 5 style.............................. */
+.common-sec-5{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5.625rem;
+    padding: 0 12.5rem ;
+}
+.common-sec-5 .heading h2{
+    width:100%;
+    font-style: normal;
+    font-size: 2.3rem;
+    line-height: 4.7rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+}
+.common-sec-5 .steps{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.common-sec-5 .steps img{
+    width: 60%;
+    height: 50%;
+    padding-bottom: 1.2rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    border-radius: 50%;
+}
+.common-sec-5 .steps .step-text{
+    padding: 1rem;
+    display: block;
+}
+.common-sec-5 .steps .step-text h2{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.common-sec-5 .steps .step-text p a{
+    text-decoration: underline;
+}
+.common-sec-5 .steps .step-text p a:hover{
+    color: #2083F6;
+    text-decoration: none;
+}
+/* .......................................sections 6 style.............................. */
+.common-sec-6{
+    width: 100%;
+    height: 30vh;
+ 
+    padding: 0 12.5rem ;
+    background-color: rgb(247, 247, 247);
+}
+
+.common-sec-6 .query{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5.5rem 0 1.5rem 0;
+}
+.common-sec-6 .query h2{
+    font-size: 1.3rem;
+    color: #888888;
+}
+.common-sec-6 .button-group{
+    text-align: center;
+}
+.common-sec-6 .button-group a{
+        background-color: var(--button-background);
+        color: #fff;
+        padding: 0.8rem 1.9rem;
+        border-radius: 1.4rem;
+        font-size: normal;
+        font-weight: normal;
+        font-size: 1.2rem;
+        transition: 0.2s;
+}
+.common-sec-6 .button-group a:hover{
+    background-color: #fff;
+    color: var(--button-background);
+}
+
+.common-sec-6 .query a{
+    text-decoration: underline;
+}
+.common-sec-6 a:hover{
+    text-decoration: none;
+    color:var(--button-background);
+}
+
+/* ....................................footer css styling................................. */
+
+footer{
+    background-color: #d6d6d6;
+    width: 100%;
+    height:55vh;
+    display: flex;
+    /* align-items: center; */
+    margin-bottom:0;
+    padding: 4rem 12.5rem ;
+}
+footer .logo-div{
+    width: 50%;
+}
+footer .logo-div img{
+    padding-bottom: 1rem;
+}
+footer .logo-div p{
+    padding-bottom: 0.6rem;
+    color: rgb(82, 82, 82);
+}
+footer .logo-div .social i{
+    padding-right: 1rem;
+    color: rgb(61, 61, 61);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+footer .logo-div .social i:hover{
+    color: #2083F6;
+}
+
+
+
+
+
+
+footer .footer-menu{
+     display: flex;
+     width: 100%;
+     margin-left: 15rem;
+     
+}
+footer .footer-menu .menu{
+    padding-right: 3rem;
+}
+footer .footer-menu .menu h4{
+    color: rgb(61, 61, 61);
+    padding-bottom: 1.5rem;
+}
+footer .footer-menu .menu a ,footer .footer-menu .menu li{
+    padding-bottom: 1rem;
+}
+footer .footer-menu .menu a:hover li:hover{
+    text-decoration: underline;
+    color: #2083F6;
+}
